@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967761AC2A408C6D005D5C15 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967761AB2A408C6D005D5C15 /* LottieView.swift */; };
+		967761AF2A40968F005D5C15 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967761AE2A40968F005D5C15 /* VisualEffectView.swift */; };
+		967761B32A40A785005D5C15 /* lottie-loading-cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 967761B22A40A785005D5C15 /* lottie-loading-cat.json */; };
+		96CDA25C2A3EEF0200932009 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 96CDA25B2A3EEF0200932009 /* Kingfisher */; };
+		96CDA25F2A3EEF3200932009 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 96CDA25E2A3EEF3200932009 /* Lottie */; };
+		96CDA26F2A3EEF7B00932009 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 96CDA26E2A3EEF7B00932009 /* Alamofire */; };
+		96CDA2762A3EFAD700932009 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDA2752A3EFAD700932009 /* ApiManager.swift */; };
+		96CDA27A2A3F061100932009 /* ApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDA2792A3F061100932009 /* ApiDataSource.swift */; };
+		96CDA27C2A3F068000932009 /* ApiPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDA27B2A3F068000932009 /* ApiPokemon.swift */; };
+		96CDA2802A3F0FDF00932009 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDA27F2A3F0FDF00932009 /* PokemonModel.swift */; };
+		96CDA2822A3F115E00932009 /* PokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDA2812A3F115E00932009 /* PokemonRepository.swift */; };
+		96CDA2872A3F188400932009 /* PokemonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDA2862A3F188400932009 /* PokemonListView.swift */; };
+		96CDA2892A3F189800932009 /* PokemonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDA2882A3F189800932009 /* PokemonListViewModel.swift */; };
+		96CDA28B2A3F18D000932009 /* PaginationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDA28A2A3F18D000932009 /* PaginationModel.swift */; };
+		96D5A8162A3F8CD5001DC8D7 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5A8152A3F8CD5001DC8D7 /* RefreshableScrollView.swift */; };
+		96D5A8182A3F8E87001DC8D7 /* GlobalVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5A8172A3F8E87001DC8D7 /* GlobalVar.swift */; };
+		96D5A81B2A3F8F12001DC8D7 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5A81A2A3F8F12001DC8D7 /* ArrayExtension.swift */; };
+		96D5A81E2A3F8F83001DC8D7 /* OrientationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5A81D2A3F8F83001DC8D7 /* OrientationViewModel.swift */; };
+		96D5A8202A3F8FBD001DC8D7 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5A81F2A3F8FBD001DC8D7 /* UIApplicationExtension.swift */; };
+		96D5A8222A3F92BB001DC8D7 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5A8212A3F92BB001DC8D7 /* ViewExtension.swift */; };
+		96D5A8242A3F942B001DC8D7 /* PokemonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D5A8232A3F942B001DC8D7 /* PokemonCardView.swift */; };
 		96EE8B9A2A3EEC7B004B51C0 /* SwiftUI_RefresableScrollViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EE8B992A3EEC7B004B51C0 /* SwiftUI_RefresableScrollViewApp.swift */; };
 		96EE8B9C2A3EEC7B004B51C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EE8B9B2A3EEC7B004B51C0 /* ContentView.swift */; };
 		96EE8B9E2A3EEC7C004B51C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EE8B9D2A3EEC7C004B51C0 /* Assets.xcassets */; };
@@ -14,6 +35,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		967761AB2A408C6D005D5C15 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		967761AE2A40968F005D5C15 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		967761B22A40A785005D5C15 /* lottie-loading-cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-loading-cat.json"; sourceTree = "<group>"; };
+		96CDA2742A3EF0E100932009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		96CDA2752A3EFAD700932009 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		96CDA2792A3F061100932009 /* ApiDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataSource.swift; sourceTree = "<group>"; };
+		96CDA27B2A3F068000932009 /* ApiPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPokemon.swift; sourceTree = "<group>"; };
+		96CDA27F2A3F0FDF00932009 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		96CDA2812A3F115E00932009 /* PokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepository.swift; sourceTree = "<group>"; };
+		96CDA2862A3F188400932009 /* PokemonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListView.swift; sourceTree = "<group>"; };
+		96CDA2882A3F189800932009 /* PokemonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModel.swift; sourceTree = "<group>"; };
+		96CDA28A2A3F18D000932009 /* PaginationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationModel.swift; sourceTree = "<group>"; };
+		96D5A8152A3F8CD5001DC8D7 /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
+		96D5A8172A3F8E87001DC8D7 /* GlobalVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVar.swift; sourceTree = "<group>"; };
+		96D5A81A2A3F8F12001DC8D7 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		96D5A81D2A3F8F83001DC8D7 /* OrientationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationViewModel.swift; sourceTree = "<group>"; };
+		96D5A81F2A3F8FBD001DC8D7 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		96D5A8212A3F92BB001DC8D7 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		96D5A8232A3F942B001DC8D7 /* PokemonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardView.swift; sourceTree = "<group>"; };
 		96EE8B962A3EEC7B004B51C0 /* SwiftUI-RefresableScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-RefresableScrollView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EE8B992A3EEC7B004B51C0 /* SwiftUI_RefresableScrollViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_RefresableScrollViewApp.swift; sourceTree = "<group>"; };
 		96EE8B9B2A3EEC7B004B51C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +66,186 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CDA26F2A3EEF7B00932009 /* Alamofire in Frameworks */,
+				96CDA25C2A3EEF0200932009 /* Kingfisher in Frameworks */,
+				96CDA25F2A3EEF3200932009 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		967761AA2A408C5B005D5C15 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				967761AB2A408C6D005D5C15 /* LottieView.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		967761AD2A409672005D5C15 /* VisualEffect */ = {
+			isa = PBXGroup;
+			children = (
+				967761AE2A40968F005D5C15 /* VisualEffectView.swift */,
+			);
+			path = VisualEffect;
+			sourceTree = "<group>";
+		};
+		967761B02A40A6C7005D5C15 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				967761B12A40A718005D5C15 /* LottieFile */,
+				96EE8B9D2A3EEC7C004B51C0 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		967761B12A40A718005D5C15 /* LottieFile */ = {
+			isa = PBXGroup;
+			children = (
+				967761B22A40A785005D5C15 /* lottie-loading-cat.json */,
+			);
+			path = LottieFile;
+			sourceTree = "<group>";
+		};
+		96CDA2702A3EEF9300932009 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				96EE8B9B2A3EEC7B004B51C0 /* ContentView.swift */,
+				96CDA2832A3F185600932009 /* PokemonList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		96CDA2712A3EEFA400932009 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				96EE8B992A3EEC7B004B51C0 /* SwiftUI_RefresableScrollViewApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		96CDA2722A3EF06300932009 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		96CDA2732A3EF06D00932009 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				96CDA2752A3EFAD700932009 /* ApiManager.swift */,
+				96CDA2792A3F061100932009 /* ApiDataSource.swift */,
+				96CDA27B2A3F068000932009 /* ApiPokemon.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		96CDA2772A3F052D00932009 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				96CDA2732A3EF06D00932009 /* Api */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		96CDA2782A3F054500932009 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				96CDA2812A3F115E00932009 /* PokemonRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		96CDA27D2A3F0FBA00932009 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96CDA27E2A3F0FC000932009 /* Codable */,
+				96CDA28A2A3F18D000932009 /* PaginationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96CDA27E2A3F0FC000932009 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				96CDA27F2A3F0FDF00932009 /* PokemonModel.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		96CDA2832A3F185600932009 /* PokemonList */ = {
+			isa = PBXGroup;
+			children = (
+				96CDA2852A3F186700932009 /* ViewModel */,
+				96CDA2842A3F185F00932009 /* View */,
+			);
+			path = PokemonList;
+			sourceTree = "<group>";
+		};
+		96CDA2842A3F185F00932009 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96CDA2862A3F188400932009 /* PokemonListView.swift */,
+				96D5A8232A3F942B001DC8D7 /* PokemonCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96CDA2852A3F186700932009 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				96CDA2882A3F189800932009 /* PokemonListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96D5A8122A3F8C63001DC8D7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				96D5A81C2A3F8F6B001DC8D7 /* Orientation */,
+				96D5A8132A3F8C70001DC8D7 /* Views */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		96D5A8132A3F8C70001DC8D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				967761AA2A408C5B005D5C15 /* Lottie */,
+				967761AD2A409672005D5C15 /* VisualEffect */,
+				96D5A8142A3F8C78001DC8D7 /* RefreshableScrollView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96D5A8142A3F8C78001DC8D7 /* RefreshableScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				96D5A8152A3F8CD5001DC8D7 /* RefreshableScrollView.swift */,
+			);
+			path = RefreshableScrollView;
+			sourceTree = "<group>";
+		};
+		96D5A8192A3F8F01001DC8D7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				96D5A81A2A3F8F12001DC8D7 /* ArrayExtension.swift */,
+				96D5A81F2A3F8FBD001DC8D7 /* UIApplicationExtension.swift */,
+				96D5A8212A3F92BB001DC8D7 /* ViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		96D5A81C2A3F8F6B001DC8D7 /* Orientation */ = {
+			isa = PBXGroup;
+			children = (
+				96D5A81D2A3F8F83001DC8D7 /* OrientationViewModel.swift */,
+			);
+			path = Orientation;
+			sourceTree = "<group>";
+		};
 		96EE8B8D2A3EEC7B004B51C0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +265,17 @@
 		96EE8B982A3EEC7B004B51C0 /* SwiftUI-RefresableScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				96EE8B992A3EEC7B004B51C0 /* SwiftUI_RefresableScrollViewApp.swift */,
-				96EE8B9B2A3EEC7B004B51C0 /* ContentView.swift */,
-				96EE8B9D2A3EEC7C004B51C0 /* Assets.xcassets */,
+				96CDA2742A3EF0E100932009 /* Info.plist */,
+				96D5A8172A3F8E87001DC8D7 /* GlobalVar.swift */,
+				96CDA2712A3EEFA400932009 /* App */,
+				96CDA2702A3EEF9300932009 /* Features */,
+				96CDA2782A3F054500932009 /* Repository */,
+				96CDA2772A3F052D00932009 /* DataSource */,
+				96CDA27D2A3F0FBA00932009 /* Model */,
+				96CDA2722A3EF06300932009 /* Services */,
+				96D5A8122A3F8C63001DC8D7 /* Components */,
+				96D5A8192A3F8F01001DC8D7 /* Extension */,
+				967761B02A40A6C7005D5C15 /* Resource */,
 				96EE8B9F2A3EEC7C004B51C0 /* Preview Content */,
 			);
 			path = "SwiftUI-RefresableScrollView";
@@ -83,6 +305,11 @@
 			dependencies = (
 			);
 			name = "SwiftUI-RefresableScrollView";
+			packageProductDependencies = (
+				96CDA25B2A3EEF0200932009 /* Kingfisher */,
+				96CDA25E2A3EEF3200932009 /* Lottie */,
+				96CDA26E2A3EEF7B00932009 /* Alamofire */,
+			);
 			productName = "SwiftUI-RefresableScrollView";
 			productReference = 96EE8B962A3EEC7B004B51C0 /* SwiftUI-RefresableScrollView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +338,11 @@
 				Base,
 			);
 			mainGroup = 96EE8B8D2A3EEC7B004B51C0;
+			packageReferences = (
+				96CDA25A2A3EEF0200932009 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				96CDA25D2A3EEF3200932009 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				96CDA26D2A3EEF7B00932009 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 96EE8B972A3EEC7B004B51C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967761B32A40A785005D5C15 /* lottie-loading-cat.json in Resources */,
 				96EE8BA12A3EEC7C004B51C0 /* Preview Assets.xcassets in Resources */,
 				96EE8B9E2A3EEC7C004B51C0 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +370,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CDA2872A3F188400932009 /* PokemonListView.swift in Sources */,
+				96CDA2892A3F189800932009 /* PokemonListViewModel.swift in Sources */,
 				96EE8B9C2A3EEC7B004B51C0 /* ContentView.swift in Sources */,
+				96CDA2822A3F115E00932009 /* PokemonRepository.swift in Sources */,
+				96D5A8182A3F8E87001DC8D7 /* GlobalVar.swift in Sources */,
+				96D5A8242A3F942B001DC8D7 /* PokemonCardView.swift in Sources */,
+				96CDA2802A3F0FDF00932009 /* PokemonModel.swift in Sources */,
+				96D5A8222A3F92BB001DC8D7 /* ViewExtension.swift in Sources */,
+				96CDA28B2A3F18D000932009 /* PaginationModel.swift in Sources */,
+				96CDA27C2A3F068000932009 /* ApiPokemon.swift in Sources */,
+				96CDA2762A3EFAD700932009 /* ApiManager.swift in Sources */,
+				967761AC2A408C6D005D5C15 /* LottieView.swift in Sources */,
 				96EE8B9A2A3EEC7B004B51C0 /* SwiftUI_RefresableScrollViewApp.swift in Sources */,
+				96CDA27A2A3F061100932009 /* ApiDataSource.swift in Sources */,
+				96D5A8162A3F8CD5001DC8D7 /* RefreshableScrollView.swift in Sources */,
+				96D5A8202A3F8FBD001DC8D7 /* UIApplicationExtension.swift in Sources */,
+				96D5A81B2A3F8F12001DC8D7 /* ArrayExtension.swift in Sources */,
+				967761AF2A40968F005D5C15 /* VisualEffectView.swift in Sources */,
+				96D5A81E2A3F8F83001DC8D7 /* OrientationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,6 +520,7 @@
 				DEVELOPMENT_TEAM = 9JR855JWZY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-RefresableScrollView/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +550,7 @@
 				DEVELOPMENT_TEAM = 9JR855JWZY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-RefresableScrollView/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +591,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96CDA25A2A3EEF0200932009 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		96CDA25D2A3EEF3200932009 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		96CDA26D2A3EEF7B00932009 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96CDA25B2A3EEF0200932009 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96CDA25A2A3EEF0200932009 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		96CDA25E2A3EEF3200932009 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96CDA25D2A3EEF3200932009 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		96CDA26E2A3EEF7B00932009 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96CDA26D2A3EEF7B00932009 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96EE8B8E2A3EEC7B004B51C0 /* Project object */;
 }
