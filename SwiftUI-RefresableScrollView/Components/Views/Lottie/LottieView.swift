@@ -34,6 +34,7 @@ struct ResizableLottieView: UIViewRepresentable {
 
     func addLottieView(to view: UIView) {
         let lottieView = LottieAnimationView(name: filename, bundle: .main)
+        lottieView.loopMode = .loop
         lottieView.backgroundColor = .clear
         // For finding it in subView and use for animating
         lottieView.tag = 1009

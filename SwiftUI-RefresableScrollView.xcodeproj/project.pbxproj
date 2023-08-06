@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962D96E32A80425800C06D88 /* OffsetObservingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962D96E22A80425800C06D88 /* OffsetObservingScrollView.swift */; };
 		967761AC2A408C6D005D5C15 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967761AB2A408C6D005D5C15 /* LottieView.swift */; };
 		967761AF2A40968F005D5C15 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967761AE2A40968F005D5C15 /* VisualEffectView.swift */; };
 		967761B32A40A785005D5C15 /* lottie-loading-cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 967761B22A40A785005D5C15 /* lottie-loading-cat.json */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		962D96E22A80425800C06D88 /* OffsetObservingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetObservingScrollView.swift; sourceTree = "<group>"; };
 		967761AB2A408C6D005D5C15 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		967761AE2A40968F005D5C15 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		967761B22A40A785005D5C15 /* lottie-loading-cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lottie-loading-cat.json"; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		962D96E12A80423F00C06D88 /* OffsetObservingScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				962D96E22A80425800C06D88 /* OffsetObservingScrollView.swift */,
+			);
+			path = OffsetObservingScrollView;
+			sourceTree = "<group>";
+		};
 		967761AA2A408C5B005D5C15 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +223,7 @@
 		96D5A8132A3F8C70001DC8D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				962D96E12A80423F00C06D88 /* OffsetObservingScrollView */,
 				967761AA2A408C5B005D5C15 /* Lottie */,
 				967761AD2A409672005D5C15 /* VisualEffect */,
 				96D5A8142A3F8C78001DC8D7 /* RefreshableScrollView */,
@@ -376,6 +387,7 @@
 				96CDA2822A3F115E00932009 /* PokemonRepository.swift in Sources */,
 				96D5A8182A3F8E87001DC8D7 /* GlobalVar.swift in Sources */,
 				96D5A8242A3F942B001DC8D7 /* PokemonCardView.swift in Sources */,
+				962D96E32A80425800C06D88 /* OffsetObservingScrollView.swift in Sources */,
 				96CDA2802A3F0FDF00932009 /* PokemonModel.swift in Sources */,
 				96D5A8222A3F92BB001DC8D7 /* ViewExtension.swift in Sources */,
 				96CDA28B2A3F18D000932009 /* PaginationModel.swift in Sources */,

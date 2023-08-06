@@ -47,7 +47,7 @@ private struct ViewDidLoadModifier: ViewModifier {
 }
 
 extension View {
-    public func foregroundLinearGradient(
+    func foregroundLinearGradient(
         colors: [Color],
         startPoint: UnitPoint,
         endPoint: UnitPoint
@@ -63,6 +63,14 @@ extension View {
 
             )
         }
+    }
+
+    func positionIn(space: UUID, offset: Binding<CGPoint>) -> some View {
+        PositionObservingView(
+            coordinateSpace: .named(space),
+            position: offset,
+            content: { self }
+        )
     }
 }
 

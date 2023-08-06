@@ -13,6 +13,10 @@ struct PokemonListView: View {
     @StateObject private var orientationVm = DeviceOrientationVM()
     @StateObject private var refreshControl = RefreshableScrollViewModel()
 
+    private let coordinateSpaceName = UUID()
+    @State private var contentPosition: CGPoint = .zero
+    @State private var isHideNavBar = true
+
     // MARK: - Layout
     private let sidePadding: CGFloat = isPhone ? 12 : 20
 
@@ -36,11 +40,24 @@ struct PokemonListView: View {
                 .navigationTitle("Pokemon List")
                 .navigationBarTitleDisplayMode(.inline)
                 .ignoresSafeArea(.all, edges: .bottom)
+                .navigationBarHidden(isHideNavBar)
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onViewDidLoad {
             vm.refreshControl = refreshControl
             vm.onViewDidLoad()
+        }
+        .onChange(of: contentPosition) { position in
+//            print("offset: \(position)")
+            let offset = position.y
+            guard offset > -100 else { return }
+            if offset <= -50 && isHideNavBar {
+                isHideNavBar = false
+                print("isHideNavBar: \(isHideNavBar)")
+            } else if offset > -50 && !isHideNavBar {
+                isHideNavBar = true
+                print("isHideNavBar: \(isHideNavBar)")
+            }
         }
     }
 
@@ -49,6 +66,27 @@ struct PokemonListView: View {
     private var content: some View {
         RefreshableScrollView(vm: refreshControl, refreshView: AnyView(refreshImage)) {
             VStack(spacing: 0) {
+                Text("Pokemon List")
+                    .font(.system(size: 32, weight: .bold))
+                    .foregroundColor(.gray)
+                    .frame(height: 50)
+                    .frame(maxWidth: .infinity)
+                    .overlay(alignment: .leading) {
+                        Button {
+                            print("back")
+                        } label: {
+                            Image(systemName: "chevron.left")
+                                .resizable()
+                                .frame(width: 16, height: 20)
+                                .frame(width: 44, height: 44, alignment: .center)
+                                .foregroundColor(.gray)
+                                .padding(.leading, 12)
+                        }
+                    }
+                    .padding(.top, 8)
+                    .padding(.bottom, 20)
+                    .opacity(isHideNavBar ? 1 : 0)
+                    .animation(.linear(duration: 0.3), value: isHideNavBar)
                 LazyVGrid(columns: coverGridColumns, spacing: isPhone ? 10 : 14) {
                     ForEach(vm.pokeList.indices, id: \.self) { index in
                         let pokemon = vm.pokeList[index]
@@ -73,10 +111,12 @@ struct PokemonListView: View {
                         .frame(height: 80, alignment: .top)
                 }
             }
+            .positionIn(space: coordinateSpaceName, offset: $contentPosition)
         } onRefresh: {
             vm.pullToRefresh()
         }
         .clipped()
+        .coordinateSpace(name: coordinateSpaceName)
         .background(listBackground)
     }
 

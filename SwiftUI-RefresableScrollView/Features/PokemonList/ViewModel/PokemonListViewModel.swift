@@ -23,7 +23,7 @@ class PokemonListVM: ObservableObject {
     private let repository: PokemonRepositoryProtocol
 
     // MARK: - Life Cycle
-    init(repository: PokemonRepositoryProtocol = PokemonRepository()) {
+    init(repository: PokemonRepositoryProtocol = MockPokemonRepository()) {
         self.repository = repository
     }
 
@@ -54,12 +54,15 @@ class PokemonListVM: ObservableObject {
             }
             if let list = value {
                 self.pokeList.append(contentsOf: list.results)
-                self.pageStates.loadedPage = page + 1
+                self.pageStates.loadedPage = page
                 self.pageStates.hasNext = list.next != nil
+                print("page: \(page)")
             }
             self.isLoadingPokeList = false
-            if let isRefreshing = self.refreshControl?.isRefreshing, isRefreshing {
-                self.refreshControl?.endRefresh()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                if let isRefreshing = self.refreshControl?.isRefreshing, isRefreshing {
+                    self.refreshControl?.endRefresh()
+                }
             }
         }
     }

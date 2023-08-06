@@ -84,3 +84,18 @@ struct PokemonRepository: PokemonRepositoryProtocol {
         return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/\(pokemonId ?? "1").png"
     }
 }
+
+struct MockPokemonRepository: PokemonRepositoryProtocol {
+    func getPokeList(page: Int, limit: Int, completion: @escaping (PokemonListModel?) -> Void) {
+        let startIndex = (page - 1) * limit
+        let list = (startIndex..<(startIndex + limit)).map { index in
+            PokemonModel(name: "Pokemon \(index)", url: "", imageUrl: "")
+        }
+        let model = PokemonListModel(count: limit, next: page > 5 ? nil : "", results: list)
+        completion(model)
+    }
+
+    func getPokeDetail(name: String, completion: @escaping (PokemonDetailModel?) -> Void) {
+        completion(PokemonDetailModel(name: name, url: "", imageUrl: ""))
+    }
+}
