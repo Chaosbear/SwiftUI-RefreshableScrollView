@@ -12,7 +12,7 @@ But allow us to implement pull to refresh with the interface like **UIRefreshCon
 
 
 ## Demo
-![Simple ProgressView](./SwiftUI-RefresableScrollView/Resource/Demo/refreshable-demo.gif) 
+![Demo](./SwiftUI-RefresableScrollView/Resource/Demo/refreshable-demo.gif) 
 
 ```swift
 // ScrollView
