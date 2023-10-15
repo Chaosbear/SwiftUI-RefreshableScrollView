@@ -44,7 +44,7 @@ struct PokemonModel {
     var url: String = "n/a"
     var imageUrl: String = "n/a"
 
-    static let `default` = Self()
+    static func `default`() -> Self { Self() }
 }
 
 extension PokemonModel: Codable {

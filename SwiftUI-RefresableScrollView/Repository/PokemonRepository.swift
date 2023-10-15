@@ -91,7 +91,7 @@ struct MockPokemonRepository: PokemonRepositoryProtocol {
         let list = (startIndex..<(startIndex + limit)).map { index in
             PokemonModel(name: "Pokemon \(index)", url: "", imageUrl: "")
         }
-        let model = PokemonListModel(count: limit, next: page > 5 ? nil : "", results: list)
+        let model = PokemonListModel(count: limit, next: page > 1000 ? nil : "", results: list)
         completion(model)
     }
 

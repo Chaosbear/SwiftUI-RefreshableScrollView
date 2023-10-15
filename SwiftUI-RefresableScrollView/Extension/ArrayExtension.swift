@@ -15,4 +15,8 @@ extension Array {
     func repeated(count: Int) -> [Element] {
       return [Element](repeating: self, count: count)
     }
+
+    subscript (safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
 }

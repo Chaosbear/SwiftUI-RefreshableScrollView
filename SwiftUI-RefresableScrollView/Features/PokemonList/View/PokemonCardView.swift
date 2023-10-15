@@ -40,6 +40,7 @@ struct PokemonCardView: View {
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
         .frame(height: 160, alignment: .top)
+        .background(Color(0xD1FFC2).opacity(0.1))
         .background(VisualEffectView(effect: UIBlurEffect(style: .systemThinMaterialLight)))
         .cornerRadius(12)
         .shadow(color: .gray.opacity(0.4), radius: 4, x: 4, y: 4)
@@ -54,7 +55,10 @@ struct PokemonCardView: View {
             .overlay(alignment: .center) {
                 KFAnimatedImage(URL(string: cardData.imageUrl))
                     .backgroundDecode()
-                    .placeholder { Color.gray.opacity(0.5).cornerRadius(12) }
+                    .placeholder { 
+                        Image("pikachu-placeholder")
+                            .resizable()
+                    }
                     .fade(duration: 0.5)
                     .aspectRatio(contentMode: .fit)
             }

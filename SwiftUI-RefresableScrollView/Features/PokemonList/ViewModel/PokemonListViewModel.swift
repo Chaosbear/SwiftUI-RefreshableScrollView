@@ -8,9 +8,13 @@
 import Foundation
 
 class PokemonListVM: ObservableObject {
+    struct PokeItem: Identifiable {
+        var id: UUID
+        var model: PokemonModel
+    }
 
     // MARK: - Properties
-    @Published private(set) var pokeList: [PokemonModel] = []
+    @Published private(set) var pokeList: [PokeItem] = []
     @Published private(set) var totalPokemon = 0
 
     private var pageStates: DefaultPaginationStates = .init()
@@ -25,6 +29,10 @@ class PokemonListVM: ObservableObject {
     // MARK: - Life Cycle
     init(repository: PokemonRepositoryProtocol = MockPokemonRepository()) {
         self.repository = repository
+    }
+
+    deinit {
+        print("deinit PokemonListVM")
     }
 
     // MARK: - Action: ViewDidLoad
@@ -53,16 +61,15 @@ class PokemonListVM: ObservableObject {
                 self.pokeList.removeAll()
             }
             if let list = value {
-                self.pokeList.append(contentsOf: list.results)
+                let items = list.results.map { PokeItem(id: UUID(), model: $0) }
+                self.pokeList.append(contentsOf: items)
                 self.pageStates.loadedPage = page
                 self.pageStates.hasNext = list.next != nil
                 print("page: \(page)")
             }
             self.isLoadingPokeList = false
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                if let isRefreshing = self.refreshControl?.isRefreshing, isRefreshing {
-                    self.refreshControl?.endRefresh()
-                }
+            if let isRefreshing = self.refreshControl?.isRefreshing, isRefreshing {
+                self.refreshControl?.endRefresh()
             }
         }
     }
