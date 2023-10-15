@@ -122,41 +122,7 @@ struct PokemonListView: View {
         }
         .ignoresSafeArea()
     }
-
-//    @ViewBuilder
-//    private var refreshImage: some View {
-//        LottieRefreshControlView(vm: refreshControl, fileName: "lottie-loading-cat", height: 80)
-//    }
 }
-
-//struct LottieRefreshControlView: View {
-//    @ObservedObject var vm: RefreshableScrollViewModel
-//    var lottieFileName: String
-//    var refreshViewHeight: CGFloat
-//
-//    init(vm: RefreshableScrollViewModel, fileName: String, height: CGFloat) {
-//        self.vm = vm
-//        self.lottieFileName = fileName
-//        self.refreshViewHeight = height
-//    }
-//
-//    var body: some View {
-//        HStack {
-//            ResizableLottieView(filename: lottieFileName, isPlaying: vm.isRefreshing)
-//                .scaleEffect(vm.progress + 0.01)
-//                .rotationEffect(.init(degrees: 180 * vm.progress))
-//                .frame(height: refreshViewHeight * vm.progress)
-//        }
-//    }
-//
-//    private var iconOpacity: CGFloat {
-//        if vm.isRefreshing {
-//            return 0
-//        } else {
-//            return vm.isRefreahable ? vm.progress : 0
-//        }
-//    }
-//}
 
 struct PokemonListView_Previews: PreviewProvider {
     static var previews: some View {
