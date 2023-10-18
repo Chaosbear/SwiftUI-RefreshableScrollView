@@ -77,8 +77,8 @@ class RefreshableScrollViewModel: ObservableObject {
             DispatchQueue.main.async {
                 onRefresh()
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + refreshDurationLimit) {
-                self.endRefresh()
+            DispatchQueue.main.asyncAfter(deadline: .now() + refreshDurationLimit) { [weak self] in
+                self?.endRefresh()
             }
         }
     }

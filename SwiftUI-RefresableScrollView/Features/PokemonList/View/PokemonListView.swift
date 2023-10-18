@@ -106,7 +106,7 @@ struct PokemonListView: View {
     @ViewBuilder
     private var listBackground: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color(0xAFBBFF).opacity(0.8), Color(0xB6AAFF).opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(gradient: Gradient(colors: [Color(0xA8E1FF).opacity(0.8), Color(0x6A91E5).opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing)
             Circle().foregroundColor(Color(0xB8FFE6).opacity(0.3))
                 .frame(width: 300, height: 300)
                 .blur(radius: 5)

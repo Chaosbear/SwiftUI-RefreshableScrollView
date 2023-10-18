@@ -50,7 +50,7 @@ class PokemonListVM: ObservableObject {
     // MARK: - Action: Call API
     private func getPokeList(
         page: Int,
-        limit: Int = 20
+        limit: Int = 10_000
     ) {
         guard !isLoadingPokeList else { return }
         isLoadingPokeList = true
